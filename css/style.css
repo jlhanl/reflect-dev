@@ -84,9 +84,10 @@ h4 {
   color: #797979;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-left: 10%;
   padding-right: 10%;
+  margin: auto;
 }
 
 #scroll-arrow {
@@ -195,3 +196,100 @@ a.down-arrow:before {
   padding-right: 2rem;
   padding-bottom: 1rem;
 }
+
+ul.features {
+  text-align: center;
+  list-style-type: none;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.feat-name, .feat-desc {
+  color: #797979;
+}
+
+.feat-name {
+  margin-top: 4rem;
+}
+
+li.feature:hover {
+  border-left: 3px solid #F8E450;
+}
+
+#searchimg {
+  margin-top: 5.5rem;
+  height: 30rem;
+  box-shadow: 1px 1px 3px 2px rgba(121, 121, 121, .4)
+}
+
+.testimonial-panel {
+  background-color: #797979;
+  height: 80%;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+h3#featured {
+  margin-top: 3rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid #F8E450;
+}
+
+.cta-panel {
+  background-image: url('../images/lastcall.jpg');
+  background-size: cover;
+  height: 80%;
+  position: relative;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.cta-panel:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.centered {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#lastcall-btn {
+  background: #F8E450; 
+  color: #797979;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+footer {
+  background-color: #797979;
+}
+
+h6 {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h6#copyright {
+  text-align: left;
+}
+
+h6#footer-links {
+  text-align: center;
+}
+
+#logo {
+  height: 40px;
+  float: right;
+}
+
