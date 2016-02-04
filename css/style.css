@@ -73,6 +73,12 @@ h3 {
   margin: 1.5rem 0 3.5rem;
 }
 
+h4 {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
 #signup-btn {
   background: #F8E450; 
   color: #797979;
@@ -124,6 +130,22 @@ a.down-arrow:before {
   background: rgba(0, 0, 0, .3);
 }
 
+.right-align {
+  float: right;
+  text-align: right;
+}
+
+.thin {
+  margin-top: 12rem;
+  font-weight: 400;
+}
+
+#house {
+  height: 4rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
 .raise-panel {
   background-image: url('../images/painting.jpg');
   background-size: cover;
@@ -143,6 +165,12 @@ a.down-arrow:before {
   background: rgba(0, 0, 0, .4);
 }
 
+#camera {
+  height: 4rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
 .attract-panel {
   background-image: url('../images/wedding.jpg');
   background-size: cover;
@@ -160,4 +188,10 @@ a.down-arrow:before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .4);
+}
+
+#reward {
+  height: 4rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
