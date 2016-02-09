@@ -107,7 +107,7 @@ a.down-arrow:before {
   border-width: 0 4px 4px 0;
   border-style: solid;
   border-color: #FFFFFF;
-  margin-top: -11px;
+  margin-top: 1rem;
   transform: rotate(45deg);
   text-align: center;
 }
@@ -224,8 +224,38 @@ li.feature:hover {
 
 .testimonial-panel {
   background-color: #797979;
-  height: 80%;
+  height: auto;
   border-bottom: 3px solid #FFFFFF;
+}
+
+ul.testimonies {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  background: #FFFFFF;
+  padding-bottom: 15px;
+  margin-bottom: 7rem;
+}
+
+#eximg {
+  padding-top: 2px;
+}
+
+blockquote {
+  background: #FFFFFF;
+  font-style: italic;
+}
+
+.testimonies p {
+  background-color: #797979;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  color: #FFFFFF;
+}
+
+.testimonies em {
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 h3#featured {
@@ -255,13 +285,22 @@ h3#featured {
   background: rgba(0, 0, 0, .6);
 }
 
+.call {
+  display: block;
+  text-align: center;
+}
+
 h2#cta {
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 
 .centered {
   text-align: center;
   margin-top: 3rem;
+}
+
+#tagline {
+  margin-top: 1rem;
 }
 
 #lastcall-btn {
@@ -272,6 +311,7 @@ h2#cta {
   letter-spacing: 1px;
   padding-left: 10%;
   padding-right: 10%;
+  margin-top: 0;
 }
 
 footer {
@@ -299,4 +339,6 @@ h6#footer-links {
   float: right;
   margin: 10px 0;
 }
+
+
 
