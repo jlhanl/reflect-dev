@@ -212,9 +212,9 @@ ul.features {
   margin-top: 4rem;
 }
 
-li.feature:hover {
+/*.left-border {
   border-left: 3px solid #F8E450;
-}
+}*/
 
 #searchimg {
   margin-top: 5.5rem;
