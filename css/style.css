@@ -37,6 +37,7 @@ body {
 
 .tint {
   background-image: url('../images/home-hero.jpg');
+  background-position: center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -87,7 +88,6 @@ h4 {
   letter-spacing: 1px;
   padding-left: 10%;
   padding-right: 10%;
-  margin: auto;
 }
 
 #scroll-arrow {
@@ -114,6 +114,7 @@ a.down-arrow:before {
 
 .connect-panel {
   background-image: url('../images/desk.jpg');
+  background-position: center;
   background-size: cover;
   height: 80%;
   position: relative;
@@ -149,6 +150,7 @@ a.down-arrow:before {
 
 .raise-panel {
   background-image: url('../images/painting.jpg');
+  background-position: center;
   background-size: cover;
   height: 80%;
   position: relative;
@@ -174,10 +176,12 @@ a.down-arrow:before {
 
 .attract-panel {
   background-image: url('../images/wedding.jpg');
+  background-position: center;
   background-size: cover;
   height: 80%;
   position: relative;
   border-bottom: 3px solid #FFFFFF;
+  margin-bottom: 5rem;
 }
 
 .attract-panel:before {
@@ -197,15 +201,38 @@ a.down-arrow:before {
   padding-bottom: 1rem;
 }
 
+.feat {
+  margin-left: 10% !important;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+#mobile-headline {
+  color: #797979;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid #F8E450;
+  margin-top: 0;
+}
+
 ul.features {
+  text-align: left;
+  list-style-type: none;
+  vertical-align: middle;
+}
+
+ul.features-mobile {
   text-align: center;
   list-style-type: none;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  display: block;
 }
+
 
 .feat-name, .feat-desc {
   color: #797979;
+  padding-left: 15px;
 }
 
 .feat-name {
@@ -217,15 +244,22 @@ ul.features {
 }*/
 
 #searchimg {
-  margin-top: 5.5rem;
-  height: 30rem;
-  box-shadow: 1px 1px 3px 2px rgba(121, 121, 121, .4)
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  box-shadow: 1px 1px 3px 2px rgba(121, 121, 121, .4);
+  margin-left: 2rem;
+}
+
+#searchimg-mobile {
+  box-shadow: 1px 1px 3px 2px rgba(121, 121, 121, .4);
 }
 
 .testimonial-panel {
   background-color: #797979;
   height: auto;
   border-bottom: 3px solid #FFFFFF;
+  margin-top: 5rem;
 }
 
 ul.testimonies {
@@ -235,6 +269,7 @@ ul.testimonies {
   background: #FFFFFF;
   padding-bottom: 15px;
   margin-bottom: 7rem;
+  margin-top: 3rem;
 }
 
 #eximg {
@@ -268,6 +303,7 @@ h3#featured {
 
 .cta-panel {
   background-image: url('../images/lastcall.jpg');
+  background-position: center;
   background-size: cover;
   height: 80%;
   position: relative;
@@ -342,3 +378,49 @@ h6#footer-links {
 
 
 
+/***** MEDIA QUERIES *****/
+
+/* iOS Portrait */
+
+@media screen and (max-width: 767px) {
+
+  #main-headline {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  #main-subheadline {
+    text-align: center;
+  }
+
+  #signup-btn {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .phone-hide {
+    display: none;
+  } 
+
+  .attract-panel {
+    margin-bottom: 3rem;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+
+  #logo {
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .phone-show {
+    display: none;
+  }
+
+}
