@@ -107,7 +107,7 @@ a.down-arrow:before {
   border-width: 0 4px 4px 0;
   border-style: solid;
   border-color: #FFFFFF;
-  margin-top: 1rem;
+  /*margin-top: .1rem;*/
   transform: rotate(45deg);
   text-align: center;
 }
