@@ -377,6 +377,74 @@ h6#footer-links {
 }
 
 
+/***** DASHBOARD *****/
+
+
+.tint-dash {
+  height: 8rem;
+  background-image: url('../images/browsebackimg.png');
+}
+
+.tint-dash::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: rgba(0, 0, 0, .3);
+}
+
+.sub-nav {
+  display: inline-block;
+  float: right;
+  font-family: 'Lato', sans-serif;
+}
+
+.sub-nav dd, .sub-nav dd a {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.sub-nav dd.active a {
+  background: none;
+  outline: 2px solid #F8E450;
+}
+
+
+ul.event-banner {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+.event-banner li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 3.5rem;
+}
+
+.charity-name, .event-name {
+  margin-top: 15px;
+}
+
+.event-description {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.event-description p {
+  width: 60%;
+  float: left;
+}
+
+.event-description img {
+  float: right;
+}
+
 
 /***** MEDIA QUERIES *****/
 

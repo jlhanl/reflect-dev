@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflect | Welcome</title>
+
+    <!--- FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic,300' rel='stylesheet' type='text/css' />
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <script src="js/vendor/modernizr.js"></script>
+
+  </head>
+  <body>
+    <div class="container tint-dash">
+      <div class="row">
+        <div class="small-11 small-centered medium-12 medium-uncentered columns">
+
+          <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [ small, medium, large]">
+            <ul class="title-area">
+              <li class="name">
+                <a href="index.html"><img src="images/reflectlogo.png" /></a>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            </ul>
+
+        
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li><a href="#">Browse Upcoming Events</a></li>
+                <li><a href="#">My Events</a></li>
+                <li><a href="#">My Charities</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#"><img src="images/profileimg.png"></a></li>
+              </ul>
+            </section>
+          </nav>
+
+            <dl class="sub-nav">
+              <dt></dt>
+              <dd class="active"><a href="#">Pending</a></dd>
+              <dd><a href="#">Booked</a></dd>
+              <dd><a href="#">Declined</a></dd>
+              <dd><a href="#">Past</a></dd>
+              <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
+            </dl>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="accordion" class="small-12 small-centered medium-10 columns">
+          <ul class="event-banner">
+            <li><img src="images/compassion.png" /></li>
+            <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
+            <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
+          </ul>
+          <div>
+            <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+            <li class="event-description"><img src="images/haiti.png" /></li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).foundation();
+
+      $(document).ready(function() {
+
+        $('#accordion').accordion( {
+          collapsible: true,
+          header: "ul"
+        });
+
+      });
+    </script>
+  </body>
+</html>

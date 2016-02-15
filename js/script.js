@@ -24,4 +24,8 @@ $( document ).ready(function() {
     $("#searchimg").attr('src', '../images/volunteer.png');
   });
 
+  // $('#accordion').accordion( {
+  //   collapsible: true
+  // });
+
 });
