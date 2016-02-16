@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  color: #797979;
 }
 
 .top-bar {
@@ -8,7 +9,8 @@ body {
 }
 
 .name img {
-  height: 60px;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .top-bar-section ul li {
@@ -24,6 +26,13 @@ body {
   letter-spacing: 2px;
   border: none;
   margin: 2px;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  border-bottom: 2px solid #F8E450;
+  margin-bottom: 5px;
+  background: none;
+  height: 40px;
 }
 
 .top-bar-section ul li a:hover {
@@ -381,8 +390,8 @@ h6#footer-links {
 
 
 .tint-dash {
-  height: 8rem;
-  background-image: url('../images/browsebackimg.png');
+  height: 7rem;
+  background-color: #797979;
 }
 
 .tint-dash::before {
@@ -392,25 +401,49 @@ h6#footer-links {
   top: 0;
   left: 0;
   width: 100%;
-  height: 8rem;
+  height: 7rem;
   background: rgba(0, 0, 0, .3);
 }
 
+#profileimg {
+  height: 1.5rem;
+}
+
+.ribbon, .sub-nav {
+  position: relative;
+}
+
+.ribbon {
+  margin-top: 10px;
+  height: 2rem;
+  z-index: 1;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+}
+
 .sub-nav {
+  z-index: 2;
   display: inline-block;
   float: right;
   font-family: 'Lato', sans-serif;
+  margin-top: -30px;
 }
 
 .sub-nav dd, .sub-nav dd a {
-  color: #FFFFFF;
+  color: #797979;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.sub-nav dd a:hover {
+  font-weight: 400;
 }
 
 .sub-nav dd.active a {
-  background: none;
-  outline: 2px solid #F8E450;
+  background: #F8E450;
+  color: #797979;
+  font-weight: 300;
 }
 
 
@@ -436,13 +469,39 @@ ul.event-banner {
   display: inline-block;
 }
 
-.event-description p {
-  width: 60%;
-  float: left;
+li.event-description {
+  float: right;
+  width: 100%;
 }
 
-.event-description img {
-  float: right;
+
+.action-icons {
+  display: block;
+  text-align: center;
+  margin: auto;
+  vertical-align: bottom !important;
+  padding-top: 10px;
+}
+
+#volunteer-icon {
+  height: 2rem;
+}
+
+#message-icon {
+  height: 1.25rem;
+}
+
+#message {
+  margin-top: 10px;
+}
+
+.icon-label {
+  font-size: .75rem;
+  font-weight: 300;
+}
+
+#expand {
+  width: 2.5rem;
 }
 
 
