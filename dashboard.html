@@ -9,8 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic,300' rel='stylesheet' type='text/css' />
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <!-- <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script> -->
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -68,8 +68,8 @@
 
     <div class="container">
       <div class="row">
-        <div class="small-12 small-centered medium-11 columns">
-          <ul id="accordion" class="event-banner">
+        <div id="accordion" class="small-12 small-centered medium-11 columns">
+          <ul class="event-banner accordion-toggle">
             <li><img src="images/compassion.png" /></li>
             <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
             <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
@@ -77,7 +77,7 @@
             <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">MESSAGE</p></li>
             <li><img id="expand" src="images/expand.svg" /></li>
           </ul>
-          <div class="row">
+          <div class="row accordion-content">
             <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
               <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
             </div>
@@ -97,16 +97,18 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-      $(document).foundation();
+      $(document).ready(function($) {
+        $('#accordion').find('.accordion-toggle').click(function(){
 
-      $(document).ready(function() {
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
 
-        $('#accordion').accordion( {
-          collapsible: true,
-          header: "ul"
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
         });
-
       });
     </script>
+
   </body>
 </html>
