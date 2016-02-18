@@ -446,18 +446,22 @@ h6#footer-links {
   font-weight: 300;
 }
 
+.event-list {
+  margin-top: 2rem;
+}
 
 ul.event-banner {
   display: inline-block;
   list-style-type: none;
   text-align: center;
+  margin: .5rem; 
 }
 
 .event-banner li {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  margin-right: 3.5rem;
+  margin-right: 5rem;
 }
 
 .charity-name, .event-name {
@@ -504,12 +508,27 @@ li.event-description {
   width: 2.5rem;
 }
 
+#accordion {
+  margin-top: 1rem;
+  border: 2px solid #999;
+  border-radius: 3px;
+  text-align: center;
+}
+
 .accordion-toggle {
   cursor: pointer;
 }
 
 .accordion-content {
   display: none;
+}
+
+li#bannerArrow {
+  margin-right: 0;
+}
+
+.close-icon {
+  content: url('../images/close.svg');
 }
 
 /*.accordion-content.default {display: block;}*/

@@ -66,16 +66,56 @@
 
     </div>
 
-    <div class="container">
+    <div class="container event-list">
       <div class="row">
-        <div id="accordion" class="small-12 small-centered medium-11 columns">
+        <div id="accordion" class="small-12 small-centered columns">
           <ul class="event-banner accordion-toggle">
             <li><img src="images/compassion.png" /></li>
             <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
             <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
             <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">VOLUNTEER</p></li>
             <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">MESSAGE</p></li>
-            <li><img id="expand" src="images/expand.svg" /></li>
+            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
+          </ul>
+          <div class="row accordion-content">
+            <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+            </div>
+            <div class="small-12 small-centered medium-4 medium-uncentered columns">
+              <li class="event-description"><img src="images/haiti.png" /></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="accordion" class="small-12 small-centered columns">
+          <ul class="event-banner accordion-toggle">
+            <li><img src="images/compassion.png" /></li>
+            <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
+            <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
+            <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">VOLUNTEER</p></li>
+            <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">MESSAGE</p></li>
+            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
+          </ul>
+          <div class="row accordion-content">
+            <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+            </div>
+            <div class="small-12 small-centered medium-4 medium-uncentered columns">
+              <li class="event-description"><img src="images/haiti.png" /></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="accordion" class="small-12 small-centered columns">
+          <ul class="event-banner accordion-toggle">
+            <li><img src="images/compassion.png" /></li>
+            <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
+            <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
+            <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">VOLUNTEER</p></li>
+            <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">MESSAGE</p></li>
+            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
           </ul>
           <div class="row accordion-content">
             <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
@@ -105,6 +145,8 @@
 
           //Hide the other panels
           $(".accordion-content").not($(this).next()).slideUp('fast');
+
+          $("#expand").toggleClass('close-icon');
 
         });
       });
