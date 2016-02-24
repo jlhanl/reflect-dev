@@ -508,7 +508,7 @@ li.event-description {
   width: 2.5rem;
 }
 
-#accordion {
+.accordion-style {
   margin-top: 1rem;
   border: 2px solid #999;
   border-radius: 3px;
