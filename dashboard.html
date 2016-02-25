@@ -23,106 +23,226 @@
 
   </head>
   <body id="dashboard">
-    <div class="container tint-dash">
-      <div class="row">
-        <div class="small-11 small-centered medium-12 medium-uncentered columns">
+    <div id="myevents"> 
+      <div class="container tint-dash">
+        <div class="row">
+          <div class="small-11 small-centered medium-12 medium-uncentered columns">
 
-          <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [ small, medium, large]">
-            <ul class="title-area">
-              <li class="name">
-                <a href="index.html"><img src="images/reflectlogo.png" /></a>
-              </li>
-              <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-            </ul>
-
-        
-            <section class="top-bar-section">
-              <!-- Right Nav Section -->
-              <ul class="right">
-                <li><a href="#">Browse Upcoming Events</a></li>
-                <li class="active"><a href="#">My Events</a></li>
-                <li><a href="#">My Charities</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
+            <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [ small, medium, large]">
+              <ul class="title-area">
+                <li class="name">
+                  <a href="index.html"><img src="images/reflectlogo.png" /></a>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
               </ul>
-            </section>
-          </nav>
+
+          
+              <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                  <li><a class="browsenav" href="#">Browse Listings</a></li>
+                  <li class="active"><a class="eventsnav" href="#">My Events</a></li>
+                  <li><a href="#">My Charities</a></li>
+                  <li><a href="#">Messages</a></li>
+                  <li><a href="#"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
         </div>
+
+        <div class="ribbon"></div>
+        <div class="row">
+          <div class="small-11 small-offset-1 medium-10 columns">
+            <dl id="my-events-sub" class="sub-nav">
+              <dt></dt>
+              <dd class="active"><a href="#">Pending</a></dd>
+              <dd><a href="#">Booked</a></dd>
+              <dd><a href="#">Declined</a></dd>
+              <dd><a href="#">Past</a></dd>
+              <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
+            </dl>
+          </div>
+        </div>
+
       </div>
 
-      <div class="ribbon"></div>
-      <div class="row">
-        <div class="small-11 small-offset-1 medium-10 columns">
-          <dl id="my-events-sub" class="sub-nav">
-            <dt></dt>
-            <dd class="active"><a href="#">Pending</a></dd>
-            <dd><a href="#">Booked</a></dd>
-            <dd><a href="#">Declined</a></dd>
-            <dd><a href="#">Past</a></dd>
-            <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
-          </dl>
+
+
+<!--MY EVENTS PENDING -->
+      <div id="events-pending accordion" class="container event-list">
+        <div class="row">
+          <div class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/compassion.png" /></li>
+              <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
+              <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/chalk.png" /></li>
+              <li><p class="charity-name">Chalk Up<br>www.chalkup.com</p></li>
+              <li><p class="event-name">Sidewalk War<br><em>8/30/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand1" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/cat.png" /></li>
+              <li><p class="charity-name">Agloe Humane Society<br>www.agloehs.org</p></li>
+              <li><p class="event-name">Adoption List<br><em>10/14/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand2" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
+  <!-- END MY EVENTS PENDING -->
 
-    <div class="container event-list">
-      <div class="row">
-        <div id="accordion" class="small-12 small-centered columns accordion-style">
-          <ul class="event-banner accordion-toggle">
-            <li><img src="images/compassion.png" /></li>
-            <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
-            <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
-            <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
-            <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
-            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
-          </ul>
-          <div class="row accordion-content">
-            <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
-            </div>
-            <div class="small-12 small-centered medium-4 medium-uncentered columns">
-              <li class="event-description"><img src="images/haiti.png" /></li>
+
+<!-- BROWSE LISINGS -->
+
+    <div id="browse"> 
+      <div class="container tint-dash">
+        <div class="row">
+          <div class="small-11 small-centered medium-12 medium-uncentered columns">
+
+            <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [ small, medium, large]">
+              <ul class="title-area">
+                <li class="name">
+                  <a href="index.html"><img src="images/reflectlogo.png" /></a>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+              </ul>
+
+          
+              <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                  <li class="active"><a class="browsenav" href="#">Browse Listings</a></li>
+                  <li><a class="eventsnav" href="#">My Events</a></li>
+                  <li><a href="#">My Charities</a></li>
+                  <li><a href="#">Messages</a></li>
+                  <li><a href="#"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+
+        <div class="ribbon"></div>
+        <div class="row">
+          <div class="small-5 columns searchpad sub-nav">
+            <input class="search-bar" type="search" placeholder="search by location or name"></input>
+          </div>
+          <div class="small-6 small-offset-1 columns">
+            <dl id="my-events-sub" class="sub-nav">
+              <dt>Refine by:</dt>
+              <dd><a href="#">Event Date</a></dd>
+              <dd><a href="#">Category</a></dd>
+              <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
+            </dl>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="container event-list">
+        <div class="row">
+          <div class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/compassion.png" /></li>
+              <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
+              <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="accordion1" class="small-12 small-centered columns accordion-style">
-          <ul class="event-banner accordion-toggle">
-            <li><img src="images/chalk.png" /></li>
-            <li><p class="charity-name">Chalk Up<br>www.chalkup.com</p></li>
-            <li><p class="event-name">Sidewalk War<br><em>8/30/2016</em></p></li>
-            <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
-            <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
-            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
-          </ul>
-          <div class="row accordion-content">
-            <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
-            </div>
-            <div class="small-12 small-centered medium-4 medium-uncentered columns">
-              <li class="event-description"><img src="images/haiti.png" /></li>
+        <div class="row">
+          <div id="accordion1" class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/chalk.png" /></li>
+              <li><p class="charity-name">Chalk Up<br>www.chalkup.com</p></li>
+              <li><p class="event-name">Sidewalk War<br><em>8/30/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand1" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="accordion2" class="small-12 small-centered columns accordion-style">
-          <ul class="event-banner accordion-toggle">
-            <li><img src="images/compassion.png" /></li>
-            <li><p class="charity-name">Compassion International<br>www.compassion.com</p></li>
-            <li><p class="event-name">Haiti Rebuild<br><em>8/22/2016</em></p></li>
-            <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
-            <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
-            <li id="bannerArrow"><img id="expand" src="images/expand.svg" /></li>
-          </ul>
-          <div class="row accordion-content">
-            <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
-            </div>
-            <div class="small-12 small-centered medium-4 medium-uncentered columns">
-              <li class="event-description"><img src="images/haiti.png" /></li>
+        <div class="row">
+          <div id="accordion2" class="small-12 small-centered columns accordion-style">
+            <ul class="event-banner accordion-toggle">
+              <li><img src="images/cat.png" /></li>
+              <li><p class="charity-name">Agloe Humane Society<br>www.agloehs.org</p></li>
+              <li><p class="event-name">Adoption List<br><em>10/14/2016</em></p></li>
+              <li class="action-icons"><img id="volunteer-icon" src="images/volunteer-icon.svg" /><p class="icon-label">RESPOND</p></li>
+              <li class="action-icons"><img id="message-icon" src="images/message-icon.svg" /><p class="icon-label" id="message">SEND MESSAGE</p></li>
+              <li id="bannerArrow"><img id="expand2" class="expand" src="images/expand.svg" /></li>
+            </ul>
+            <div class="row accordion-content">
+              <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
+                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              </div>
+              <div class="small-12 small-centered medium-4 medium-uncentered columns">
+                <li class="event-description"><img src="images/haiti.png" /></li>
+              </div>
             </div>
           </div>
         </div>
@@ -138,6 +258,9 @@
     <script src="js/script.js"></script>
     <script>
       $(document).ready(function($) {
+
+        $('#browse').css('display', 'none');
+
         $('#accordion').find('.accordion-toggle').click(function(){
 
           //Expand or collapse this panel
@@ -157,7 +280,7 @@
           //Hide the other panels
           $(".accordion-content").not($(this).next()).slideUp('fast');
 
-          $("#expand").toggleClass('close-icon');
+          $("#expand1").toggleClass('close-icon');
 
         });
 
@@ -169,7 +292,15 @@
           //Hide the other panels
           $(".accordion-content").not($(this).next()).slideUp('fast');
 
-          $("#expand").toggleClass('close-icon');
+          $("#expand2").toggleClass('close-icon');
+
+        });
+
+        $('.browsenav').click(function(){
+
+          $('#myevents').css('display', 'none');
+
+          $('#browse').css('display', 'block');
 
         });
       });

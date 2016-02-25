@@ -388,6 +388,10 @@ h6#footer-links {
 
 /***** DASHBOARD *****/
 
+#dashboard {
+  background-color: rgba(245, 245, 245, 1);
+}
+
 
 .tint-dash {
   height: 7rem;
@@ -410,6 +414,10 @@ h6#footer-links {
   height: 1.5rem;
 }
 
+input[type="search"] {
+  height: 1.75rem;
+}
+
 .ribbon, .sub-nav {
   position: relative;
 }
@@ -428,6 +436,12 @@ h6#footer-links {
   float: right;
   font-family: 'Lato', sans-serif;
   margin-top: -30px;
+}
+
+.searchpad {
+  float: left;
+  padding: 0;
+  width: 30%;
 }
 
 .sub-nav dd, .sub-nav dd a {
@@ -510,13 +524,13 @@ li.event-description {
   font-weight: 300;
 }
 
-#expand {
+.expand {
   width: 2.5rem;
 }
 
 .accordion-style {
   margin-top: 1rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border-radius: 3px;
   text-align: center;
   background-color: #FFFFFF;
