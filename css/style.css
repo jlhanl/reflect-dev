@@ -392,6 +392,7 @@ h6#footer-links {
 .tint-dash {
   height: 7rem;
   background-color: #797979;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .tint-dash::before {
@@ -468,6 +469,11 @@ ul.event-banner {
   margin-top: 15px;
 }
 
+.charity-name {
+  min-width: 12rem;
+  max-width: 12rem;
+}
+
 .event-description {
   list-style-type: none;
   display: inline-block;
@@ -510,9 +516,10 @@ li.event-description {
 
 .accordion-style {
   margin-top: 1rem;
-  border: 2px solid #999;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
   border-radius: 3px;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .accordion-toggle {
