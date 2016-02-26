@@ -1,3 +1,9 @@
+#browse, #browse-sub {
+  display: none;
+}
+
+
+
 body {
   font-family: 'Lato', sans-serif;
   color: #797979;
@@ -90,7 +96,7 @@ h4 {
 }
 
 #signup-btn {
-  background: #F8E450; 
+  background: #F8E450;
   color: #797979;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -349,7 +355,7 @@ h2#cta {
 }
 
 #lastcall-btn {
-  background: #F8E450; 
+  background: #F8E450;
   color: #797979;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -469,7 +475,7 @@ ul.event-banner {
   display: inline-block;
   list-style-type: none;
   text-align: center;
-  margin: .5rem; 
+  margin: .5rem;
 }
 
 .event-banner li {
@@ -578,7 +584,7 @@ li#bannerArrow {
 
   .phone-hide {
     display: none;
-  } 
+  }
 
   .attract-panel {
     margin-bottom: 3rem;
