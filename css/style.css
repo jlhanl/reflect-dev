@@ -675,23 +675,22 @@ li#bannerArrow {
 
 
 
-*//***** MEDIA QUERIES *****/
+/***** MEDIA QUERIES *****/
 
 /* iOS Portrait */
 
 @media screen and (max-width: 767px) {
 
-  .right {
-    display: block;
-  }
 
   #main-headline {
     text-align: center;
     margin-top: 4rem;
+    font-size: 2.25rem;
   }
 
   #main-subheadline {
     text-align: center;
+    font-size: 1.75rem;
   }
 
   #signup-btn {
@@ -706,6 +705,10 @@ li#bannerArrow {
 
   .attract-panel {
     margin-bottom: 3rem;
+  }
+
+  .feat-name {
+    font-size: 2rem;
   }
 
   #copyright {
@@ -723,5 +726,6 @@ li#bannerArrow {
   .phone-show {
     display: none;
   }
+
 
 }
