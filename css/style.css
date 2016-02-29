@@ -50,6 +50,30 @@ body {
   background: none;
 }
 
+.title-area {
+  margin-left: 0;
+}
+
+.right-home {
+  list-style-type: none;
+  font-family: 'Lato';
+  font-weight: 300;
+  float: right;
+  display: block;
+  margin-top: 22px;
+  opacity: 0.9;
+}
+
+.right-home a {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.right-home:hover {
+  opacity: 1;
+}
+
 .tint {
   background-image: url('../images/home-hero.jpg');
   background-position: center;
@@ -645,6 +669,10 @@ li#bannerArrow {
   opacity: 1;
 }
 
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+  background: none;
+}
+
 
 
 *//***** MEDIA QUERIES *****/
@@ -652,6 +680,10 @@ li#bannerArrow {
 /* iOS Portrait */
 
 @media screen and (max-width: 767px) {
+
+  .right {
+    display: block;
+  }
 
   #main-headline {
     text-align: center;
