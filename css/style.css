@@ -268,7 +268,6 @@ ul.features-mobile {
   display: block;
 }
 
-
 .feat-name, .feat-desc {
   color: #797979;
   padding-left: 15px;
@@ -277,6 +276,7 @@ ul.features-mobile {
 .feat-name {
   margin-top: 4rem;
 }
+
 
 /*.left-border {
   border-left: 3px solid #F8E450;
@@ -518,6 +518,24 @@ input[type="search"] {
   margin-top: 2rem;
 }
 
+#charity-logo, #action-volunteer, #action-message {
+  width: 15%;
+}
+
+#charity-info {
+  width: 25%;
+}
+
+#charity-event {
+  width: 20%;
+}
+
+#charity-logo {
+  text-align: left;
+  margin-left: -1rem;
+  width: 10%;
+}
+
 ul.event-banner {
   display: inline-block;
   list-style-type: none;
@@ -529,7 +547,7 @@ ul.event-banner {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  margin-right: 5rem;
+  /*margin-right: 5rem;*/
 }
 
 .charity-name, .event-name {
@@ -607,7 +625,9 @@ li.event-description {
 }
 
 li#bannerArrow {
-  margin-right: 0;
+  float: right;
+  margin-top: 30px;
+  margin-right: 1rem;
 }
 
 .close-icon {
@@ -727,5 +747,8 @@ li#bannerArrow {
     display: none;
   }
 
+  #copyright {
+    text-align: right;
+  }
 
 }
