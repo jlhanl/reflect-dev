@@ -64,6 +64,26 @@ body {
   opacity: 0.9;
 }
 
+.right-home-dash {
+  list-style-type: none;
+  font-family: 'Lato';
+  font-weight: 300;
+  float: right;
+  display: inline-block;
+  margin-top: 22px;
+  opacity: 0.9;
+}
+
+.right-home-dash a {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.right-home-dash:hover {
+  opacity: 1;
+}
+
 .right-home a {
   color: #FFFFFF;
   letter-spacing: 1px;
@@ -737,6 +757,30 @@ li#bannerArrow {
 
   #logo {
     text-align: center;
+  }
+
+  #charity-logo {
+    margin-left: -3.5rem;
+  }
+
+  p.icon-label {
+    margin-bottom: 1rem;
+  }
+
+  #charity-info {
+    display: none;
+  }
+
+  #charity-event {
+    width: 45%;
+  }
+
+  #action-volunteer {
+    width: 20%;
+  }
+
+  #action-message {
+    display: none;
   }
 
 }

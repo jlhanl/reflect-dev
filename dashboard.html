@@ -13,9 +13,10 @@
     <script src="js/jquery-ui.min.js"></script> -->
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="datepicker/css/datepicker.css">
     <link rel="stylesheet" href="css/style.css" />
 
 
@@ -24,7 +25,7 @@
   </head>
   <body id="dashboard">
     <div id="myevents">
-      <div class="container tint-dash">
+      <div class="container tint-dash phone-hide">
         <div class="row">
           <div class="small-11 small-centered medium-12 medium-uncentered columns">
 
@@ -48,6 +49,69 @@
                 </ul>
               </section>
             </nav>
+          </div>
+        </div>
+
+        <div class="ribbon"></div>
+        <div class="row">
+          <!-- my events subnav -->
+          <div id="my-events-sub">
+            <div class="small-11 small-offset-1 medium-10 columns">
+              <dl class="sub-nav">
+                <dt></dt>
+                <dd class="active"><a href="#">Pending</a></dd>
+                <dd><a href="#">Booked</a></dd>
+                <dd><a href="404page.html">Declined</a></dd>
+                <dd><a href="404page.html">Past</a></dd>
+                <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
+              </dl>
+            </div>
+          </div>
+
+          <!-- browse subnav -->
+          <div id="browse-sub">
+            <div class="small-5 columns searchpad sub-nav">
+              <input class="search-bar" type="search" placeholder="search by location or name"></input>
+            </div>
+            <div class="small-6 small-offset-1 columns">
+              <dl class="sub-nav">
+                <dt>Refine by:</dt>
+                <dd><a href="#">Event Date</a></dd>
+                <dd><a href="#">Category</a></dd>
+                <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- MOBILE NAV -->
+
+      <div class="container tint-dash phone-show">
+        <div class="row">
+          <div class="small-11 small-centered medium-12 medium-uncentered columns">
+
+            <nav>
+            <div class="row">
+              <div class="small-6 columns">
+                <ul class="title-area">
+                  <li class="name">
+                    <a href="index.html"><img src="images/reflectlogo.png" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="small-6 columns">
+                <ul class="right-home-dash">
+                  <li><a class="browsenav dash-nav" href="#">Browse Listings</a></li>
+                  <li><a class="eventsnav badge1" data-badge="3" href="#">My Events</a></li>
+                  <li><a class="dash-nav" href="404page.html">Messages</a></li>
+                  <li><a href="404page.html"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
           </div>
         </div>
 
@@ -123,7 +187,7 @@
             </ul>
             <div class="row accordion-content">
               <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+                <li class="event-description"><p>Chalk Up is looking for a creative photographer to document our annual Sidewalk Chalk-Art Contest. We'd love to work with someone who cares about encouraging young artists and has a positive attitude.<br>We'll need a release for all images for promotion of our program, but you're welcome to use the images for your own portfolio use.<br>Please message us if you are interested in partnering with Chalk Up.</p></li>
               </div>
               <div class="small-12 small-centered medium-4 medium-uncentered columns">
                 <li class="event-description"><img src="images/haiti.png" /></li>
@@ -143,10 +207,10 @@
             </ul>
             <div class="row accordion-content">
               <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+                <li class="event-description"><p>Lorem ipsum dolor sit amet, et vix legimus repudiare definitionem. Quo ea suas putant menandri, in possim debitis postulant usu, qui id duis veniam consequat.<br>Modo placerat urbanitas duo cu, sit diam mazim commune id. Vel ut dicat legimus explicari, prima civibus repudiandae pri an. Sea meis voluptua te, ludus facete sententiae ea pro, nobis iriure eu sed.</p></li>
               </div>
               <div class="small-12 small-centered medium-4 medium-uncentered columns">
-                <li class="event-description"><img src="images/haiti.png" /></li>
+                <li class="event-description"><img src="images/dogs.png" /></li>
               </div>
             </div>
           </div>
@@ -186,7 +250,7 @@
             </ul>
             <div class="row accordion-content">
               <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+                <li class="event-description"><p>Chalk Up is looking for a creative photographer to document our annual Sidewalk Chalk-Art Contest. We'd love to work with someone who cares about encouraging young artists and has a positive attitude.<br>We'll need a release for all images for promotion of our program, but you're welcome to use the images for your own portfolio use.<br>Please message us if you are interested in partnering with Chalk Up.</p></li>
               </div>
               <div class="small-12 small-centered medium-4 medium-uncentered columns">
                 <li class="event-description"><img src="images/haiti.png" /></li>
@@ -206,10 +270,10 @@
             </ul>
             <div class="row accordion-content">
               <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-                <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+                <li class="event-description"><p>Lorem ipsum dolor sit amet, et vix legimus repudiare definitionem. Quo ea suas putant menandri, in possim debitis postulant usu, qui id duis veniam consequat.<br>Modo placerat urbanitas duo cu, sit diam mazim commune id. Vel ut dicat legimus explicari, prima civibus repudiandae pri an. Sea meis voluptua te, ludus facete sententiae ea pro, nobis iriure eu sed.</p></li>
               </div>
               <div class="small-12 small-centered medium-4 medium-uncentered columns">
-                <li class="event-description"><img src="images/haiti.png" /></li>
+                <li class="event-description"><img src="images/dogs.png" /></li>
               </div>
             </div>
           </div>
@@ -246,7 +310,7 @@
           </ul>
           <div class="row accordion-content">
             <div class="small-12 small-centered medium-6 medium-offset-1 medium-uncentered columns">
-              <li class="event-description"><p>We would love a passionate photographer join us at our Fundraiser to build structurally-sound schools in our 17 projects in and around Port-au-Prince.<br><br>Specifically, we’re hoping to work with a photographer with experience in the event industry, who is comfortable working in a low-lit environment. Please message us with any quesitons. Thank you!</p></li>
+              <li class="event-description"><p>Lorem ipsum dolor sit amet, et vix legimus repudiare definitionem. Quo ea suas putant menandri, in possim debitis postulant usu, qui id duis veniam consequat.<br>Modo placerat urbanitas duo cu, sit diam mazim commune id. Vel ut dicat legimus explicari, prima civibus repudiandae pri an. Sea meis voluptua te, ludus facete sententiae ea pro, nobis iriure eu sed.</p></li>
             </div>
             <div class="small-12 small-centered medium-4 medium-uncentered columns">
               <li class="event-description"><img src="images/dogs.png" /></li>
@@ -269,6 +333,7 @@
 
 
     <script src="js/foundation.min.js"></script>
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
     <script src="js/script.js"></script>
     <script>
       $(document).ready(function($) {
@@ -287,8 +352,6 @@
 
           $(this).find('.expand').toggleClass('close-icon');
 
-          // $(this).toggleClass('close-icon');
-
         });
 
 
@@ -301,7 +364,6 @@
           $('#browse').css('display', 'none');
           $('#browse-sub').css('display', 'none');
 
-
         });
 
         $('.browsenav').click(function(){
@@ -312,13 +374,10 @@
 
           $('#events-pending').css('display', 'none');
           $('#my-events-sub').css('display', 'none');
-          // $('#browse').css('display', 'block');
-
-          // $('#myevents').css('display', 'none');
-          //
-          // $('#browse').css('display', 'block');
 
         });
+
+        $('.datepicker').datepicker()
 
 
       });
