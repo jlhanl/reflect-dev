@@ -72,11 +72,12 @@ body {
   display: inline-block;
   margin-top: 22px;
   opacity: 0.9;
+  margin-left: 0;
 }
 
 .right-home-dash li {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 #profile-mobile {
@@ -101,6 +102,10 @@ body {
 
 .right-home:hover {
   opacity: 1;
+}
+
+.mobile-top-nav {
+  padding-left: 0;
 }
 
 .tint {
@@ -499,6 +504,7 @@ input[type="search"] {
   line-height:18px;
   border-radius:50%;
   box-shadow:0 0 1px #333;
+  opacity: 1;
 }
 
 .ribbon, .sub-nav {
@@ -788,6 +794,7 @@ li#bannerArrow {
   .name img {
     height: auto;
     margin-top: 15px;
+    list-style-type: none;
   }
 
   .badge1[data-badge]:after {
@@ -803,6 +810,10 @@ li#bannerArrow {
     line-height:18px;
     border-radius:50%;
     box-shadow:0 0 1px #333;
+  }
+
+  .title {
+    padding-right: 0;
   }
 
   .row.sub {
