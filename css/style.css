@@ -853,6 +853,15 @@ li#bannerArrow {
     display: none;
   }
 
+  .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
+    margin-left: 0;
+  }
+
 }
 
 @media only screen 
@@ -865,7 +874,8 @@ li#bannerArrow {
   and (device-aspect-ratio : 375/667)
   and (aspect-ratio : 667/375)
   and (device-pixel-ratio : 2)
-  and (-webkit-min-device-pixel-ratio : 2) { 
+  and (-webkit-min-device-pixel-ratio : 2) 
+  { 
 
     .right-home-dash li {
       margin-right: 2rem;
@@ -875,11 +885,7 @@ li#bannerArrow {
       height: 20px;
     }
 
-
-
-
-
-}
+  }
 
 @media screen and (min-width: 768px) {
 

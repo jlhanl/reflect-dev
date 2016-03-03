@@ -118,7 +118,7 @@
         <div class="ribbon"></div>
         <div class="row">
           <!-- MOBILE my events subnav -->
-          <div id="my-events-sub">
+          <div id="mobile-events-sub">
             <div class="small-11 small-centered columns">
               <dl class="sub-nav">
                 <dt></dt>
@@ -131,13 +131,12 @@
           </div>
 
           <!-- MOBILE browse subnav -->
-          <div id="browse-sub">
-            <div class="small-5 columns searchpad sub-nav">
+          <div id="mobile-browse" class="row">
+            <div class="small-6 columns searchpad sub-nav">
               <input class="search-bar" type="search" placeholder="search by location or name"></input>
             </div>
-            <div class="small-6 small-offset-1 columns">
+            <div class="small-6 columns">
               <dl class="sub-nav">
-                <dt>Refine by:</dt>
                 <dd><a href="#">Event Date</a></dd>
                 <dd><a href="#">Category</a></dd>
                 <!-- <dd class="hide-for-small-only"><a href="#">Suspended</a></dd> -->
@@ -339,6 +338,7 @@
 
         $('#browse').css('display', 'none');
         $('#browse-sub').css('display', 'none');
+        $('#mobile-browse').css('display', 'none');
 
 
         $('#accordion').find('.accordion-toggle').click(function(){
@@ -359,9 +359,11 @@
           $('.browse-li').removeClass('active');
           $('#events-pending').css('display', 'block');
           $('#my-events-sub').css('display', 'block');
+          $('#mobile-events-sub').css('display', 'block');
 
           $('#browse').css('display', 'none');
           $('#browse-sub').css('display', 'none');
+          $('#mobile-browse').css('display', 'none');
 
         });
 
@@ -370,9 +372,11 @@
           $('.events-li').removeClass('active');
           $('#browse').css('display', 'block');
           $('#browse-sub').css('display', 'block');
+          $('#mobile-browse').css('display', 'block');
 
           $('#events-pending').css('display', 'none');
           $('#my-events-sub').css('display', 'none');
+          $('#mobile-events-sub').css('display', 'none');
 
         });
 
