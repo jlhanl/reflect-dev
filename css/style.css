@@ -785,6 +785,11 @@ li#bannerArrow {
     height: 4.25rem;
   }
 
+  .name img {
+    height: auto;
+    margin-top: 15px;
+  }
+
   .badge1[data-badge]:after {
     content:attr(data-badge);
     position:absolute;
@@ -841,7 +846,7 @@ li#bannerArrow {
   }
 
   #copyright {
-    text-align: right;
+    text-align: center;
   }
 
 
