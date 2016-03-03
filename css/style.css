@@ -74,6 +74,15 @@ body {
   opacity: 0.9;
 }
 
+.right-home-dash li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+#profile-mobile {
+  margin-right: 0px;
+}
+
 .right-home-dash a {
   color: #FFFFFF;
   letter-spacing: 1px;
@@ -476,6 +485,7 @@ input[type="search"] {
 .badge1 {
   position:relative;
 }
+
 .badge1[data-badge]:after {
   content:attr(data-badge);
   position:absolute;
@@ -767,6 +777,45 @@ li#bannerArrow {
     margin-bottom: 1rem;
   }
 
+  .tint-dash {
+    height: 4.25rem;
+  }
+
+  .tint-dash:before {
+    height: 4.25rem;
+  }
+
+  .badge1[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top: -12px;
+    right: -15px;
+    font-size:.7em;
+    background: #F8E450;;
+    color: #797979;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+    box-shadow:0 0 1px #333;
+  }
+
+  .row.sub {
+    height: inherit;
+  }
+
+/*  nav {
+    height: 4.25rem;
+  }*/
+
+  .ribbon {
+    margin-top: 0;
+  }
+
+  dd {
+    text-align: center;
+  }
+
   #charity-info {
     display: none;
   }
@@ -794,5 +843,6 @@ li#bannerArrow {
   #copyright {
     text-align: right;
   }
+
 
 }
