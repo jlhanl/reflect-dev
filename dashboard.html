@@ -41,8 +41,8 @@
               <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                  <li id="browse-li"><a class="browsenav dash-nav" href="#">Browse Listings</a></li>
-                  <li id="events-li" class="active"><a class="eventsnav badge1" data-badge="3" href="#">My Events</a></li>
+                  <li class="browse-li"><a class="browsenav dash-nav" href="#">Browse Listings</a></li>
+                  <li class="events-li active"><a class="eventsnav badge1" data-badge="3" href="#">My Events</a></li>
                   <li><a class="dash-nav" href="404page.html">My Charities</a></li>
                   <li><a class="dash-nav" href="404page.html">Messages</a></li>
                   <li><a href="404page.html"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
@@ -104,8 +104,8 @@
               </div>
               <div class="small-10 columns mobile-top-nav">
                 <ul class="right-home-dash">
-                  <li><a class="browsenav dash-nav" href="#">Listings</a></li>
-                  <li><a class="eventsnav badge1" data-badge="3" href="#">Events</a></li>
+                  <li class="browse-li"><a class="browsenav dash-nav" href="#">Listings</a></li>
+                  <li class="events-li active"><a class="eventsnav badge1" data-badge="3" href="#">Events</a></li>
                   <li><a class="dash-nav" href="404page.html">Messages</a></li>
                   <li id="profile-mobile"><a href="404page.html"><span><img id="profileimg" src="images/profile.svg" alt="Profile"></span></a></li>
                 </ul>
@@ -355,8 +355,8 @@
 
 
         $('.eventsnav').click(function(){
-          $('#events-li').addClass('active');
-          $('#browse-li').removeClass('active');
+          $('.events-li').addClass('active');
+          $('.browse-li').removeClass('active');
           $('#events-pending').css('display', 'block');
           $('#my-events-sub').css('display', 'block');
 
@@ -366,8 +366,8 @@
         });
 
         $('.browsenav').click(function(){
-          $('#browse-li').addClass('active');
-          $('#events-li').removeClass('active');
+          $('.browse-li').addClass('active');
+          $('.events-li').removeClass('active');
           $('#browse').css('display', 'block');
           $('#browse-sub').css('display', 'block');
 

@@ -41,6 +41,10 @@ body {
   height: 40px;
 }
 
+.right-home-dash li.active {
+  border-bottom: 2px solid #F8E450;
+}
+
 .top-bar-section ul li a:hover {
   /*outline: 2px solid #F8E450;*/
   background: transparent;
@@ -52,6 +56,7 @@ body {
 
 .title-area {
   margin-left: 0;
+  list-style-type: none;
 }
 
 .right-home {
@@ -847,6 +852,32 @@ li#bannerArrow {
   #action-message {
     display: none;
   }
+
+}
+
+@media only screen 
+  and (min-device-width : 375px) // or 213.4375em or 3in or 9cm
+  and (max-device-width : 667px) // or 41.6875em
+  and (width : 667px) // or 41.6875em
+  and (height : 375px) // or 23.4375em
+  and (orientation : landscape) 
+  and (color : 8)
+  and (device-aspect-ratio : 375/667)
+  and (aspect-ratio : 667/375)
+  and (device-pixel-ratio : 2)
+  and (-webkit-min-device-pixel-ratio : 2) { 
+
+    .right-home-dash li {
+      margin-right: 2rem;
+    }
+
+    .name img {
+      height: 20px;
+    }
+
+
+
+
 
 }
 
