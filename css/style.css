@@ -746,6 +746,11 @@ li#bannerArrow {
     margin-top: 0;
   }
 
+  .right-home {
+    font-weight: 400;
+    opacity: 1;
+  }
+
   #main-headline {
     text-align: center;
     margin-top: 4rem;
@@ -761,6 +766,7 @@ li#bannerArrow {
     display: block;
     margin: auto;
     text-align: center;
+    margin-bottom: 3.5rem;
   }
 
   .phone-hide {
@@ -777,14 +783,11 @@ li#bannerArrow {
 
   h4 {
     text-align: center;
+    font-weight: 400;
   }
 
   .icon-row {
-    margin-top: 4rem;
-  }
-
-  #camera-mobile, #reward-mobile {
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
 
   .right-align {
