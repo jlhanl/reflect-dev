@@ -768,7 +768,28 @@ li#bannerArrow {
   }
 
   .thin {
-    margin-top: 9rem;
+    margin-top: 1rem;
+  }
+
+  h2.thin {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .icon-row {
+    margin-top: 4rem;
+  }
+
+  .right-align {
+    float: none;
+    text-align: center;
+  }
+
+  h4.right-align {
+    text-align: center;
   }
 
   .attract-panel {
