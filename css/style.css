@@ -783,6 +783,10 @@ li#bannerArrow {
     margin-top: 4rem;
   }
 
+  #camera-mobile, #reward-mobile {
+    margin-top: 2rem;
+  }
+
   .right-align {
     float: none;
     text-align: center;
@@ -802,6 +806,10 @@ li#bannerArrow {
 
   h3 {
     font-weight: 400;
+  }
+
+  ul.testimonies {
+    margin-top: 2rem;
   }
 
   h6#copyright {
