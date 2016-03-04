@@ -742,6 +742,9 @@ li#bannerArrow {
 
 @media screen and (max-width: 767px) {
 
+  .hero {
+    margin-top: 0;
+  }
 
   #main-headline {
     text-align: center;
@@ -764,6 +767,10 @@ li#bannerArrow {
     display: none;
   }
 
+  .thin {
+    margin-top: 9rem;
+  }
+
   .attract-panel {
     margin-bottom: 3rem;
   }
@@ -772,8 +779,14 @@ li#bannerArrow {
     font-size: 2rem;
   }
 
-  #copyright {
+  h3 {
+    font-weight: 400;
+  }
+
+  h6#copyright {
     text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
 
   #logo {
