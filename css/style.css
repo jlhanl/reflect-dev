@@ -305,6 +305,7 @@ ul.features-mobile {
   text-align: center;
   list-style-type: none;
   display: block;
+  margin-left: 0;
 }
 
 .feat-name, .feat-desc {
@@ -809,6 +810,10 @@ li#bannerArrow {
     font-size: 2rem;
   }
 
+  .feat-name, .feat-desc {
+    padding-left: 0;
+  }
+
   h3 {
     font-weight: 400;
   }
@@ -903,7 +908,7 @@ li#bannerArrow {
   li.event-description {
     padding-bottom: 2rem;
   }
-  
+
   .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
     padding-left: 0;
     padding-right: 0;
