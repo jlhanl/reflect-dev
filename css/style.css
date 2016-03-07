@@ -900,6 +900,10 @@ li#bannerArrow {
     display: none;
   }
 
+  li.event-description {
+    padding-bottom: 2rem;
+  }
+  
   .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
     padding-left: 0;
     padding-right: 0;
@@ -908,6 +912,22 @@ li#bannerArrow {
   .sub-nav dt a, .sub-nav dd a, .sub-nav li a {
     margin-left: 0;
   }
+
+  .searchpad {
+    width: 50%;
+    margin-left: 5px;
+  }
+
+  .refine-row {
+    padding-left: 0;
+    margin-top: -32px;
+  }
+
+  ul.sub-nav {
+    list-style-type: none;
+    width: 100%;
+  }
+
 
 }
 
