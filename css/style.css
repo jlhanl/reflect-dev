@@ -820,6 +820,7 @@ li#bannerArrow {
 
   ul.testimonies {
     margin-top: 2rem;
+    margin-left: 0;
   }
 
   h6#copyright {
